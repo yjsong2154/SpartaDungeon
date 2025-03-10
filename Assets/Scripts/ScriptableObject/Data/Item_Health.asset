@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89e4b05f6f6c2064fb8fc9a9553fa16c, type: 3}
   m_Name: Item_Health
   m_EditorClassIdentifier: 
-  displayName: 
-  description: 
-  type: 0
-  icon: {fileID: 0}
-  dropPrefab: {fileID: 0}
+  displayName: "\uB2F9\uADFC"
+  description: "\uCCB4\uB825\uC744 \uD68C\uBCF5\uD569\uB2C8\uB2E4."
+  type: 1
+  dropPrefab: {fileID: 8385272041725493380, guid: eac2ad3b91855714e9e4b73a8b8c5763, type: 3}
   consumables: []

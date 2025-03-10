@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89e4b05f6f6c2064fb8fc9a9553fa16c, type: 3}
   m_Name: Item_Speed
   m_EditorClassIdentifier: 
-  displayName: 
-  description: 
-  type: 0
-  icon: {fileID: 0}
-  dropPrefab: {fileID: 0}
+  displayName: "\uBD80\uC2A4\uD130"
+  description: "\uC77C\uC2DC\uC801\uC73C\uB85C \uC18D\uB3C4\uB97C \uB192\uC785\uB2C8\uB2E4."
+  type: 1
+  dropPrefab: {fileID: 4390488302601924557, guid: 61e5194c190afad4ea54f6e37829c7a1, type: 3}
   consumables: []

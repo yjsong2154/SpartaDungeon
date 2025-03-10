@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89e4b05f6f6c2064fb8fc9a9553fa16c, type: 3}
   m_Name: Item_Wood
   m_EditorClassIdentifier: 
-  displayName: 
-  description: 
+  displayName: "\uD1B5\uB098\uBB34"
+  description: "\uADF8\uB0E5 \uD1B5\uB098\uBB34 \uC785\uB2C8\uB2E4."
   type: 0
-  icon: {fileID: 0}
-  dropPrefab: {fileID: 0}
+  dropPrefab: {fileID: 1652465678343175003, guid: 3b4b7471ec1649544bc95d3641e66a08, type: 3}
   consumables: []
