@@ -33,12 +33,11 @@ public class EnvironmentObject : MonoBehaviour, IInteractable
                     controller.Jump(data.modifying[i].value); break;
             }
         }
-        Destroy(gameObject);
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             OnInteract();
         }
