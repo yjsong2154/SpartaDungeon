@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public interface IDamagable
@@ -37,8 +38,19 @@ public class PlayerCondition : MonoBehaviour, IDamagable
 
     public void Boost(float amount)
     {
-        Speed = MathF.Max(1, Speed + amount);
-        CharacterManager.Instance.Player.controller.moveSpeed = Speed;
+        Coroutine boostCoroutine = StartCoroutine(BoostCoroutine(amount, 3f));
+    }
+
+    private IEnumerator BoostCoroutine(float amount, float duration)
+    {
+        float originalSpeed = Speed;  // 원래 속도 저장
+        Speed = MathF.Max(1, Speed + amount);  // 속도 증가
+        CharacterManager.Instance.Player.controller.moveSpeed = Speed; // 적용
+
+        yield return new WaitForSeconds(duration);  // 3초 대기
+
+        Speed = originalSpeed;  // 원래 속도로 복구
+        CharacterManager.Instance.Player.controller.moveSpeed = Speed; // 다시 적용
     }
 
     public void Die()
