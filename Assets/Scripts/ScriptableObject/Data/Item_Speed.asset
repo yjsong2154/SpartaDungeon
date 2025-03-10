@@ -16,4 +16,6 @@ MonoBehaviour:
   description: "\uC77C\uC2DC\uC801\uC73C\uB85C \uC18D\uB3C4\uB97C \uB192\uC785\uB2C8\uB2E4."
   type: 1
   dropPrefab: {fileID: 4390488302601924557, guid: 61e5194c190afad4ea54f6e37829c7a1, type: 3}
-  consumables: []
+  consumables:
+  - type: 0
+    value: 5

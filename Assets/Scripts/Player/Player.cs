@@ -8,9 +8,6 @@ public class Player : MonoBehaviour
     public PlayerController controller;
     public PlayerCondition condition;
 
-    public ItemData itemData;
-    public Action useItem;
-
     private void Awake()
     {
         CharacterManager.Instance.Player = this;

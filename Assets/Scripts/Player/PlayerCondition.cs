@@ -13,6 +13,13 @@ public class PlayerCondition : MonoBehaviour, IDamagable
     Condition health { get { return uiCondition.health; } }
     public event Action onTakeDamage;   // Damage 받을 때 호출할 Action
 
+    public float Speed;
+
+    private void Start()
+    {
+        Speed = CharacterManager.Instance.Player.controller.moveSpeed;
+    }
+
     private void Update()
     {
         health.Add(health.passiveValue * Time.deltaTime);
@@ -26,6 +33,12 @@ public class PlayerCondition : MonoBehaviour, IDamagable
     public void Heal(float amount)
     {
         health.Add(amount);
+    }
+
+    public void Boost(float amount)
+    {
+        Speed = MathF.Max(1, Speed + amount);
+        CharacterManager.Instance.Player.controller.moveSpeed = Speed;
     }
 
     public void Die()

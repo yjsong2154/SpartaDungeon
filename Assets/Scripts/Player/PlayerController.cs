@@ -70,11 +70,17 @@ public class PlayerController : MonoBehaviour
 
     public void OnJumpInput(InputAction.CallbackContext context)
     {
-        Debug.Log("jump");
-        Debug.Log(IsGrounded());
-        if (context.phase == InputActionPhase.Started && IsGrounded())
+        if (context.phase == InputActionPhase.Started)
         {
-            playerRigidbody.AddForce(Vector2.up * jumpPower, ForceMode.Impulse);
+            Jump(jumpPower);
+        }
+    }
+
+    public void Jump(float force)
+    {
+        if (IsGrounded())
+        {
+            playerRigidbody.AddForce(Vector2.up * force, ForceMode.Impulse);
         }
     }
 

@@ -241,7 +241,8 @@ GameObject:
   m_Component:
   - component: {fileID: 205285389}
   - component: {fileID: 205285388}
-  m_Layer: 0
+  - component: {fileID: 205285390}
+  m_Layer: 7
   m_Name: JumpGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,6 +286,19 @@ Transform:
   - {fileID: 1523717373}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &205285390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205285387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0386cc20042dab6489bc83c231e8c37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 7c218c6717d48b04cb9550e336055679, type: 2}
 --- !u!1 &212707189
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,6 +951,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom1
       objectReference: {fileID: 0}
+    - target: {fileID: 385491262653265843, guid: 1ac31fb474aead74ab0101d0d6546c52, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1447,7 +1465,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   condition: {fileID: 0}
-  itemData: {fileID: 0}
 --- !u!114 &1811468800
 MonoBehaviour:
   m_ObjectHideFlags: 0
