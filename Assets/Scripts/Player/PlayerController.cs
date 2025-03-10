@@ -78,6 +78,10 @@ public class PlayerController : MonoBehaviour
 
     public void Jump(float force)
     {
+        Vector3 velocity = playerRigidbody.velocity; // 현재 속도 가져오기
+        velocity.y = 0; // Y축 속도 초기화 (떨어지는 속도 무시)
+        playerRigidbody.velocity = velocity;
+
         playerRigidbody.AddForce(Vector2.up * force, ForceMode.Impulse);
     }
 
